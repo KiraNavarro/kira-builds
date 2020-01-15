@@ -33,6 +33,7 @@ class BlogRoll extends React.Component {
                     <Link
                       className="title has-text-primary is-size-4"
                       to={post.fields.slug}
+                      style={{ textDecoration: 'none' }}
                     >
                       {post.frontmatter.title}
                     </Link>
