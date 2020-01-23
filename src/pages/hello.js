@@ -7,10 +7,10 @@ import SEO from "../components/seo"
 class Hello extends React.Component {
     render() {
         const { data } = this.props;
-        const { social, siteTitle } = data.site.siteMetadata;
+        const { social, title } = data.site.siteMetadata;
 
         return (
-        <Layout location={this.props.location} title={siteTitle}>
+        <Layout location={this.props.location} title={title}>
             <SEO title="Hello" />
             <h1>Hello I'm Jessica!</h1>
             <h3>In my spare time I'm a maker based in Mexico city.</h3>
