@@ -59,7 +59,7 @@ const Bio = () => {
       <p>
         Written by <strong>{author}</strong>.
       </p>
-      <a target="_blank" href={`https://instagram.com/${social.instagram}`}>
+      <a target="_blank" href={`${social.instagram}`} rel="noopener noreferrer">
           You can see what I'm up to in Instagram
         </a>
     </div>

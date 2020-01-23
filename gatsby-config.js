@@ -6,7 +6,8 @@ module.exports = {
     siteUrl: `https://kirabuilds.netlify.com/`,
     social: {
       twitter: `kiraproject`,
-      instagram: `kira_builds`,
+      instagram: `https://www.instagram.com/kira_builds/`,
+      facebook: `https://www.facebook.com/kirabuilds`,
     },
   },
   plugins: [
