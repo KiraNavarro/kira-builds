@@ -3,7 +3,7 @@ title: "Game of Thrones Coasters"
 description: "Scratch built coasters made out of sintra and some styrene, then casted in resin."
 date: 2016-12-30T17:25:52-05:00
 update_date: ""
-featured_image: "/posts/game-of-thrones-coasters/game-of-thrones-coasters_0.jpg"
+featured_image: game-of-thrones-coasters_0.jpg
 tags: [ custom, collectible, props, casting, coasters, crest, game of thrones, mold making, painting shield, scratch build, styrene, sintra]
 categories: [build log]
 draft: false

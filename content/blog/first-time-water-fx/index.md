@@ -3,7 +3,7 @@ title: "First Time Water Fx"
 description: ""
 date: 2019-10-28T11:49:02-06:00
 update_date: ""
-featured_image: "/posts/first-time-water-fx/first-time-water-fx_0.jpg"
+featured_image: first-time-water-fx_0.jpg
 tags: []
 categories: []
 draft: false

@@ -3,7 +3,7 @@ title: "Trollhunters Amulet"
 description: "Trollhunters amulet made from scratch."
 date: 2017-05-02T17:51:35-05:00
 update_date: ""
-featured_image: "/posts/trollhunters-amulet/trollhunters-amulet_0.jpg"
+featured_image: trollhunters-amulet_0.jpg
 tags: [amulet, cast, props, cosplay, trollhunters, merlins amulet, scratch build, modelkit, model making, resin, sintra, epoxyputty]
 categories: [build log]
 draft: false

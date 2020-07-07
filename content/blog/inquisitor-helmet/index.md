@@ -3,7 +3,7 @@ title: "Inquisitor Helmet"
 description: "Foamsmithing a healmet"
 date: 2016-11-29T22:06:12-05:00
 update_date: 
-featured_image: '/posts/inquisitor-helmet/inquisitor-helmet_0.jpg'
+featured_image: inquisitor-helmet_0.jpg
 tags: [Inquisitor helmet, painting, foamsmith, props, cosplay]
 categories: [build log]
 draft: false

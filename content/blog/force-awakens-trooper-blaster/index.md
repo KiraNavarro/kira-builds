@@ -3,7 +3,7 @@ title: "The Force Awakens Trooper Blaster"
 description: "Re-painting a Nerf Gun"
 date: 2016-01-15T10:44:51-05:00
 update_date: 
-featured_image: "posts/force-awakens-trooper-blaster/trooper-blaster_0.jpg"
+featured_image: trooper-blaster_0.jpg
 tags: [trooper, blaster, star wars, toy re-paint, custom toy]
 categories: [build log]
 draft: false

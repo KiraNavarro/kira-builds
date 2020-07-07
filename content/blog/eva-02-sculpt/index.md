@@ -1,9 +1,9 @@
 ---
-title: "Eva 02 Sculpt"
-description: "Sculpted head of the Evangelion unit 02."
+title: Eva 02 Sculpt
+description: Sculpted head of the Evangelion unit 02.
 date: 2019-06-19T11:58:42-05:00
 update_date: ""
-featured_image: "/posts/eva-02-sculpt/eva-02-sculpt_0.jpg"
+featured_image: eva-02-sculpt_0.jpg
 tags: [evangelion, eva, sculpt, sculpting, painting, paint, sculpture, eva02,  evaunit02, airbrush, airbrushing]
 categories: [build log]
 draft: false

@@ -3,7 +3,7 @@ title: "Millenium Falcon"
 description: "Weathered Hasbro Millenium Falcon."
 date: 2019-06-26T12:17:05-05:00
 update_date: ""
-featured_image: "/posts/millenium-falcon/millenium-falcon_0.jpg"
+featured_image: millenium-falcon_0.jpg
 tags: [millenium falcon, starwars, hasbro, custom toy, weathering, toyrepaint]
 categories: [build log]
 draft: false

@@ -3,7 +3,7 @@ title: "Poe Dameron’s X-Wing"
 description: "A Toy Re-paint"
 date: 2016-05-01T21:55:47-05:00
 update_date: 
-featured_image: '/posts/poe-dameron-xwing/x-wing_0.jpg'
+featured_image: x-wing_0.jpg
 tags: [x-wing, star wars, toy re-paint, custom toy]
 categories: [build log]
 draft: false
