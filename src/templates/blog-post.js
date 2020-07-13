@@ -1,5 +1,6 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
+import Img from "gatsby-image"
 
 import Bio from "../components/bio"
 import Layout from "../components/Layout"
@@ -11,12 +12,13 @@ class BlogPostTemplate extends React.Component {
     const post = this.props.data.markdownRemark
     const siteTitle = this.props.data.site.siteMetadata.title
     const { previous, next } = this.props.pageContext
-
+    const { description, title, date, featured_image } = post.frontmatter
+    const image = featured_image.childImageSharp.fluid;
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO
-          title={post.frontmatter.title}
-          description={post.frontmatter.description || post.excerpt}
+          title={title}
+          description={description || post.excerpt}
         />
         <article>
           <header>
@@ -26,7 +28,7 @@ class BlogPostTemplate extends React.Component {
                 marginBottom: 0,
               }}
             >
-              {post.frontmatter.title}
+              {title}
             </h1>
             <p
               style={{
@@ -35,8 +37,9 @@ class BlogPostTemplate extends React.Component {
                 marginBottom: rhythm(1),
               }}
             >
-              {post.frontmatter.date}
+              {date}
             </p>
+            <Img fluid={image} />
           </header>
           <section dangerouslySetInnerHTML={{ __html: post.html }} />
           <hr

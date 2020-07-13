@@ -1,5 +1,6 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
+import Img from "gatsby-image"
 
 import Layout from "../components/Layout"
 import SEO from "../components/seo"
@@ -11,6 +12,7 @@ render() {
 	const siteTitle = data.site.siteMetadata.title
 	const siteDesc = data.site.siteMetadata.description
 	const posts = data.allMarkdownRemark.edges
+	
 
 	return (
 		<Layout 
@@ -20,30 +22,35 @@ render() {
 		>
 		<SEO title="All posts" />
 		{posts.map(({ node }) => {
-		const title = node.frontmatter.title || node.fields.slug
-		return (
-			<article key={node.fields.slug}>
-			<header>
-				<h3
-				style={{
-					marginBottom: rhythm(1 / 4),
-				}}
-				>
-				<Link style={{ boxShadow: `none` }} to={node.fields.slug}>
-					{title}
-				</Link>
-				</h3>
-				<small>{node.frontmatter.date}</small>
-			</header>
-			<section>
-				<p
-				dangerouslySetInnerHTML={{
-					__html: node.frontmatter.description || node.excerpt,
-				}}
-				/>
-			</section>
-			</article>
-		)
+			const title = node.frontmatter.title || node.fields.slug
+			const { date, description, featured_image } = node.frontmatter;
+			const image = featured_image.childImageSharp.fixed;
+			return (
+				<article key={node.fields.slug}>
+					
+				<header>
+					
+					<h3
+					style={{
+						marginBottom: rhythm(1 / 4),
+					}}
+					>
+					<Link style={{ boxShadow: `none` }} to={node.fields.slug}>
+						{title}
+					</Link>
+					</h3>
+					<small>{date}</small>
+				</header>
+				<section>
+					<p
+					dangerouslySetInnerHTML={{
+						__html: description || node.excerpt,
+					}}
+					/>
+				</section>
+				<Img fixed={image} />
+				</article>
+			)
 		})}
 	</Layout>
 	)
@@ -71,6 +78,13 @@ query {
 			date(formatString: "MMMM DD, YYYY")
 			title
 			description
+			featured_image {
+				childImageSharp {
+					fixed(width: 125, height: 125) {
+					...GatsbyImageSharpFixed
+					}
+				}
+			}
 		}
 		}
 	}
