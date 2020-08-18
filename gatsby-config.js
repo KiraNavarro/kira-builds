@@ -1,8 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Kira Builds`,
+    title: `JESS NAVARRO`,
+    miniDesc: `| Front End Developer`,
     author: `Jess Navarro Hinojosa`,
-    description: `A place here you can find build logs about Scratch build models, props and dioramas for action figures.`,
+    description: `HI! I'm a Front End and mobile Developer from Mexico. When I'm not coding I like to make miniature models and props.`,
     siteUrl: `https://kirabuilds.netlify.com/`,
     social: {
       twitter: `kiraproject`,

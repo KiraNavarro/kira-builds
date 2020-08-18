@@ -2,23 +2,18 @@ import React from "react"
 import { Link } from "gatsby"
 import Footer from "./Footer"
 import { rhythm, scale } from "../utils/typography"
+import logo from "../images/logo.png"
 
 class Layout extends React.Component {
 render() {
-	const { location, title, children, description } = this.props
+	const { location, title, children, description, miniDesc } = this.props
 	const rootPath = `${__PATH_PREFIX__}/`
 	let header
 
 	if (location.pathname === rootPath) {
+	// ToDo: Mayba move this header to it's own file and import it
 	header = (
 		<div>
-		<h1
-			style={{
-			...scale(1.5),
-			marginBottom: rhythm(1.5),
-			marginTop: 0,
-			}}
-		>
 			<Link
 			style={{
 				boxShadow: `none`,
@@ -27,9 +22,8 @@ render() {
 			}}
 			to={`/`}
 			>
-			{title}
+				<img src={logo} alt={`${title} ${miniDesc}`}  title={`${title} ${miniDesc}`}/>
 			</Link>
-		</h1>
 		<p>
 			{description}
 		</p>
@@ -37,13 +31,8 @@ render() {
 		
 	)
 	} else {
+	// ToDo: Chage logo on this header for a smaller one
 	header = (
-		<h3
-		style={{
-			fontFamily: `Montserrat, sans-serif`,
-			marginTop: 0,
-		}}
-		>
 		<Link
 			style={{
 			boxShadow: `none`,
@@ -52,9 +41,8 @@ render() {
 			}}
 			to={`/`}
 		>
-			{title}
+			<img src={logo} alt={`${title} ${miniDesc}`}  title={`${title} ${miniDesc}`}/>
 		</Link>
-		</h3>
 	)
 	}
 	return (

@@ -19,6 +19,7 @@ const Footer = () => {
         site {
             siteMetadata {
             title
+            miniDesc
             social {
                 instagram
                 facebook
@@ -28,7 +29,7 @@ const Footer = () => {
         }
     `)
 
-    const { title, social } = data.site.siteMetadata;
+    const { title, social,miniDesc } = data.site.siteMetadata;
 
     return (
         <footer
@@ -42,7 +43,7 @@ const Footer = () => {
             }}
         >
             <p><Link to="hello">Hello </Link></p>
-            - © {new Date().getFullYear()}, {title}
+            - © {new Date().getFullYear()}, {title}{miniDesc}
             <a target="_blank" href={`${social.instagram}`} rel="noopener noreferrer" >Instagram</a>
             <a target="_blank" href={`${social.facebook}`} rel="noopener noreferrer" >Facebook</a>
             <a href="https://www.buymeacoffee.com/kirabuilds" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" style={{height: '31', width: '117'}} /></a>

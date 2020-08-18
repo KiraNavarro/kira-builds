@@ -11,13 +11,15 @@ render() {
 	const { data } = this.props
 	const siteTitle = data.site.siteMetadata.title
 	const siteDesc = data.site.siteMetadata.description
+	const miniDesc = data.site.siteMetadata.miniDesc
 	const posts = data.allMarkdownRemark.edges
 	
 
 	return (
 		<Layout 
 			location={this.props.location} 
-			title={siteTitle} 
+			title={siteTitle}
+			miniDesc={miniDesc}
 			description={siteDesc}
 		>
 		<SEO title="All posts" />
@@ -65,6 +67,7 @@ query {
 	siteMetadata {
 		title
 		description
+		miniDesc
 	}
 	}
 	allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
