@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import Footer from "./Footer"
-import { rhythm, scale } from "../utils/typography"
+import { rhythm } from "../utils/typography"
 import logo from "../images/logo.png"
 
 class Layout extends React.Component {
