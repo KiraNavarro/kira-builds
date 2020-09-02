@@ -5,7 +5,7 @@ date: 2020-08-06T11:58:42-05:00
 update_date: ""
 featured_image: press-start_0.jpg
 tags: [game dev, unity, programming, development, game]
-categories: [game dev, dev log]
+categories: [game dev, learning log]
 draft: false
 ---
 
