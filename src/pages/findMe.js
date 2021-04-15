@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 
 import Layout from "../components/Layout"
-import SEO from "../components/seo"
+import Seo from "../components/Seo"
 
 class FindMe extends React.Component {
     render() {
@@ -20,7 +20,7 @@ class FindMe extends React.Component {
             title={title}
             miniDesc={miniDesc}
         >
-            <SEO title="Find Me" />
+            <Seo title="Find Me" />
             <h1>Find Me</h1>
             <a target="_blank" href={`${siteUrl}`} rel="noopener noreferrer" >Website</a><br></br>
             <a target="_blank" href={`${social.instagram}`} rel="noopener noreferrer" >Instagram</a><br></br>

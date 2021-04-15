@@ -2,7 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 
 import Layout from "../components/Layout"
-import SEO from "../components/seo"
+import Seo from "../components/Seo"
 import ProfilePic from "../images/profile-pic.jpg"
 
 class Hello extends React.Component {
@@ -16,7 +16,7 @@ class Hello extends React.Component {
             title={title}
             miniDesc={miniDesc}
         >
-            <SEO title="Hello" />
+            <Seo title="Hello" />
             <h1>Hello I'm Jessica!</h1>
             <h3>I'm a maker from Mexico.</h3>
             <p>I like to make all sort of things but mostly props and scratch built models and recently I've being intrested on making small props for action figures and some dioramas.</p>
