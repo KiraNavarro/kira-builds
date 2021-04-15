@@ -18,8 +18,8 @@ const Footer = () => {
         query FooterQuery {
         site {
             siteMetadata {
-            title
             miniDesc
+            authorShort
             social {
                 instagram
                 facebook
@@ -29,7 +29,7 @@ const Footer = () => {
         }
     `)
 
-    const { title, social,miniDesc } = data.site.siteMetadata;
+    const { social,miniDesc, authorShort } = data.site.siteMetadata;
 
     return (
         <footer
@@ -43,10 +43,9 @@ const Footer = () => {
             }}
         >
             <p><Link to="hello">Hello </Link></p>
-            - © {new Date().getFullYear()}, {title}{miniDesc}
+            - © {new Date().getFullYear()}, {authorShort}{miniDesc}
             <a target="_blank" href={`${social.instagram}`} rel="noopener noreferrer" >Instagram</a>
             <a target="_blank" href={`${social.facebook}`} rel="noopener noreferrer" >Facebook</a>
-            <a href="https://www.buymeacoffee.com/kirabuilds" target="_blank" rel="noopener noreferrer"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" style={{height: '31', width: '117'}} /></a>
         </footer>
     )
 }

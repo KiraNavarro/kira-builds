@@ -1,13 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: `JESS NAVARRO`,
-    miniDesc: `| Front End Developer`,
+    title: `Kira Builds`,
+    miniDesc: `| Prop And Modelkit Maker`,
     author: `Jess Navarro Hinojosa`,
-    description: `HI! I'm a Front End and mobile Developer from Mexico. When I'm not coding I like to make miniature models and props.`,
+    authorShort: 'Jess',
+    description: `Hi I’m Jessica I make Miniature scratch build models and props for custom action figures and dioramas. Star Wars fan.`,
     siteUrl: `https://kirabuilds.netlify.com/`,
     social: {
       twitter: `kiraproject`,
-      instagram: `https://www.instagram.com/jess-minis/`,
+      instagram: `https://www.instagram.com/kira.builds/`,
       facebook: `https://www.facebook.com/kirabuilds`,
     },
   },
