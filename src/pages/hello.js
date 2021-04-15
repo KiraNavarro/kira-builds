@@ -18,7 +18,7 @@ class Hello extends React.Component {
         >
             <SEO title="Hello" />
             <h1>Hello I'm Jessica!</h1>
-            <h3>In my spare time I'm a maker based in Mexico city.</h3>
+            <h3>I'm a maker from Mexico.</h3>
             <p>I like to make all sort of things but mostly props and scratch built models and recently I've being intrested on making small props for action figures and some dioramas.</p>
             <img src={ProfilePic} alt={`${title} ${miniDesc}`}  title={`${title} ${miniDesc}`} />
             <p>If you want to know what I'm up to you can follow me here:</p>
