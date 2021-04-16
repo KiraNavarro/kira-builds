@@ -3,7 +3,7 @@ import { Link, graphql } from "gatsby"
 import Img from "gatsby-image"
 
 import Layout from "../components/Layout"
-import SEO from "../components/seo"
+import Seo from "../components/Seo"
 import { rhythm } from "../utils/typography"
 
 class BlogIndex extends React.Component {
@@ -22,7 +22,7 @@ render() {
 			miniDesc={miniDesc}
 			description={siteDesc}
 		>
-		<SEO title="All posts" />
+		<Seo title="All posts" />
 		{posts.map(({ node }) => {
 			const title = node.frontmatter.title || node.fields.slug
 			const { date, description, featured_image } = node.frontmatter;

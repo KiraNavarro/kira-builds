@@ -4,7 +4,7 @@ import Img from "gatsby-image"
 
 import Bio from "../components/bio"
 import Layout from "../components/Layout"
-import SEO from "../components/seo"
+import Seo from "../components/Seo"
 import { rhythm, scale } from "../utils/typography"
 
 class BlogPostTemplate extends React.Component {
@@ -16,7 +16,7 @@ class BlogPostTemplate extends React.Component {
     const image = featured_image.childImageSharp.fluid;
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <SEO
+        <Seo
           title={title}
           description={description || post.excerpt}
         />
